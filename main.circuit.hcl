@@ -198,8 +198,8 @@ circuit "teleport" {
   # sees the new process. This is a step rather than a handler because
   # handlers run after every step.
   step "restart" {
-    command {
-      command  = "systemctl restart teleport"
+    service_action {
+      name     = "teleport"
       triggers = { config = conn3x_file.teleport__config[each.key].revision, version = var.teleport_version, ca = conn3x_file.teleport__proxy_ca[each.key].revision }
     }
   }
