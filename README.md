@@ -162,7 +162,7 @@ The `os` in a host object, one of `debian`, `ubuntu`, `rocky`, `almalinux` or `r
 
 ## Requirements
 
-Requires Conn3x v0.7.0 or later and systemd on each host, with outbound HTTPS to apt.releases.teleport.dev or yum.releases.teleport.dev. Nodes need to reach the server's `public_addr`. Teleport builds packages for x86_64 and aarch64.
+Requires Conn3x v0.28.0 or later and systemd on each host, with outbound HTTPS to apt.releases.teleport.dev or yum.releases.teleport.dev. Nodes need to reach the server's `public_addr`. Teleport builds packages for x86_64 and aarch64.
 
 ## Tested on
 
