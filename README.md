@@ -12,7 +12,7 @@ Apply the server first, then the nodes, with the same token:
 
 ```hcl
 module "teleport_server" {
-  source = "github.com/conn3xorg/circuit-teleport?ref=v0.1.0"
+  source = "github.com/conn3xorg/circuit-teleport?ref=v0.2.0"
 
   hosts                = { bastion = "203.0.113.10" }
   ssh_private_key_file = "~/.ssh/id_ed25519"
@@ -27,7 +27,7 @@ module "teleport_server" {
 }
 
 module "teleport_nodes" {
-  source = "github.com/conn3xorg/circuit-teleport?ref=v0.1.0"
+  source = "github.com/conn3xorg/circuit-teleport?ref=v0.2.0"
 
   hosts                = { nas = "192.168.1.20", pve = "192.168.1.30" }
   ssh_private_key_file = "~/.ssh/id_ed25519"
